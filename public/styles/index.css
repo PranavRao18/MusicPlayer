@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/bgimg.jpg');
+    background-size: 200vh;
+    background-repeat: no-repeat;
+    opacity: 0.8; 
+    z-index: -1; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 19px;
+    border: 1px solid #ccc;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    font-size: medium;
+    width: 70%; 
+    margin: 10rem 0;
+}
+
+input::placeholder{
+    color: rgb(194, 194, 194);
+}
+
+button[type="submit"] {
+    background-color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.songList button{
+    background-color: black;
+}
+
+.fa-magnifying-glass {
+    color: #000;
+}
+
+.songList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.songItem {
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    width: 100%; 
+    justify-content: space-between;
+    color: white;
+}
+
+input[type="hidden"] {
+    display: none;
+}
+
+.songName {
+    margin-left: 10px;
+    font-size: 16px;
+    color: white;
+    flex-grow: 1; 
+}
+
+img{
+    width: 50px;
+}

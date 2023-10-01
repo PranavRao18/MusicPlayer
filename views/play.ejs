@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= song %>
+    </title>
+    <link rel="stylesheet" href="styles/song.css">
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <img src="/images/<%= song %>.png" alt="Album Cover" class="album-cover">
+        <div class="tc">
+            <span class="song-title">
+                <%= song %>
+            </span>
+            <audio controls autoplay>
+                <source src="/audio/<%= song %>.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+</body>
+
+</html>
